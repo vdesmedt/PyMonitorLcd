@@ -31,7 +31,6 @@ COPY requirements.txt /app
 RUN pip install --no-cache-dir -r requirements.txt
 
 #Copy program
-COPY test.py /app
 COPY pylcdmonitor.py /app
 COPY font5x8.bin /app
 

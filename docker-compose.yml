@@ -1,0 +1,7 @@
+services:
+  lcd:
+    build: . 
+    container_name: pylcd
+    restart: unless-stopped
+    privileged: true
+    command: python pylcdmonitor.py
